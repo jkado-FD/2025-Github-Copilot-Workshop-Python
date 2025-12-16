@@ -128,6 +128,11 @@
       return tickFrom(state, action.nowMs);
     }
 
+    // Warn in development if an unknown action type is received
+    if (typeof console !== "undefined" && console.warn) {
+      console.warn("[PomodoroCore] Unknown action type:", action.type, action);
+    }
+
     return state;
   }
 
