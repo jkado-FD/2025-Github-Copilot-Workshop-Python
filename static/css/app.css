@@ -63,6 +63,16 @@ body {
   font-weight: 600;
 }
 
+.tab:hover {
+  background: #f3f4f6;
+}
+
+.tab:focus,
+.tab:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
 .tab--active {
   background: var(--primary);
   color: var(--primaryText);
@@ -102,10 +112,24 @@ body {
   font-weight: 600;
 }
 
+.button:hover {
+  background: #f9fafb;
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
 .button--primary {
   background: var(--primary);
   border-color: var(--primary);
   color: var(--primaryText);
+}
+
+.button--primary:hover {
+  background: #374151;
 }
 
 .button:active {

@@ -62,7 +62,7 @@
       dispatch({ type: "TICK", nowMs: Date.now() });
       // runningでなくなったら停止
       if (runtime.state.status !== "running") stopInterval();
-    }, 250);
+    }, 1000);
   }
 
   function dispatch(action) {

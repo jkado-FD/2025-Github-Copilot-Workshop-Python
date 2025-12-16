@@ -39,10 +39,6 @@ class PomodoroCoreTests(unittest.TestCase):
 
     def test_pause_freezes_remaining(self):
         # Start at now=0 then pause at 10s
-        started = js_state(
-            self.ctx,
-            "PomodoroCore.serialize(PomodoroCore.reducer(PomodoroCore.initialState(), {type:'START', nowMs: 0}))",
-        )
         paused = js_state(
             self.ctx,
             "PomodoroCore.serialize(PomodoroCore.reducer(" 
